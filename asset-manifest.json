@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/beirut-clinic/static/css/main.c545f7cf.css",
+    "main.js": "/beirut-clinic/static/js/main.90cebb2d.js",
+    "static/js/453.5f365a00.chunk.js": "/beirut-clinic/static/js/453.5f365a00.chunk.js",
+    "static/media/doc1.jpg": "/beirut-clinic/static/media/doc1.e6586ee98d29aca4ed21.jpg",
+    "static/media/doc4.jpg": "/beirut-clinic/static/media/doc4.4d2b77cc398aeb31aba0.jpg",
+    "static/media/pic1.jpg": "/beirut-clinic/static/media/pic1.98cb16b2a0d2bbcd6975.jpg",
+    "static/media/doc2.jpg": "/beirut-clinic/static/media/doc2.8070268ff8baa9f88d3a.jpg",
+    "static/media/doc3.jpg": "/beirut-clinic/static/media/doc3.c0d9b4be81ca87160184.jpg",
+    "index.html": "/beirut-clinic/index.html",
+    "main.c545f7cf.css.map": "/beirut-clinic/static/css/main.c545f7cf.css.map",
+    "main.90cebb2d.js.map": "/beirut-clinic/static/js/main.90cebb2d.js.map",
+    "453.5f365a00.chunk.js.map": "/beirut-clinic/static/js/453.5f365a00.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c545f7cf.css",
+    "static/js/main.90cebb2d.js"
+  ]
+}
