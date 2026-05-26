@@ -1,18 +1,15 @@
-import { useState } from 'react'; // 🌟 Zidna el useState hon
+import { useState } from 'react';
 
 function Contact() {
-  // 🌟 1. Khla2na states kermal n-seif el ktabe jowwa l-boxes
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  // 2. Hal daddale r7 t-talla3 l-alert w tem7e l-content
   const handleSubmit = (e) => {
-    e.preventDefault(); // منع إعادة تحميل الصفحة
+    e.preventDefault(); 
     
     alert("Thank you! Your message has been sent successfully. 🚀");
 
-    // 🌟 Hon l-se7er: b-nem7e l-inputs deghri ba3d l-alert
     setName('');
     setEmail('');
     setMessage('');
@@ -23,32 +20,43 @@ function Contact() {
       {/* القسم اليساري */}
       <div className="contact-info">
         <h1>Let's Connect</h1>
-        <p>We're here to help you. Reach out to us anytime.</p>
-        <p>📍 Branches: Beirut Main, Tripoli City</p>
-        <p>📧 Email: contact@careclinic.com</p>
-        <p>📞 Phone: +961 01 234 567</p>
+        
+        {/* 🌟 Container jdid jowwato l-sentence wal info kermel l-border wal background */}
+        <div className="contact-details-box">
+          <p>We're here to help you. Reach out to us anytime.</p>
+          <p>📍 Branches: Beirut Main, Tripoli City</p>
+          <p>📧 Email: contact@careclinic.com</p>
+          <p>📞 Phone: +961 01 234 567</p>
+        </div>
         
         <p className="social-label"><strong>Social:</strong></p>
+        
+        {/* 🌟 Container jdid lal-social media (kel wa7de class la-7al kermal l-alwan) */}
         <div className="social-links">
-          <a href="https://facebook.com/your-page" target="_blank" rel="noopener noreferrer" className="social-item">
+          <a href="https://facebook.com/your-page" target="_blank" rel="noopener noreferrer" className="social-item fb-btn">
             <span>📘</span> Facebook
           </a>
-          <a href="https://instagram.com/your-handle" target="_blank" rel="noopener noreferrer" className="social-item">
+          <a href="https://instagram.com/your-handle" target="_blank" rel="noopener noreferrer" className="social-item ig-btn">
             <span>📸</span> Instagram
           </a>
-          <a href="https://twitter.com/your-handle" target="_blank" rel="noopener noreferrer" className="social-item">
+          <a href="https://twitter.com/your-handle" target="_blank" rel="noopener noreferrer" className="social-item tw-btn">
             <span>🐦</span> Twitter
+          </a>
+          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="social-item li-btn">
+            <span>💼</span> LinkedIn
           </a>
         </div>
       </div>
 
       {/* القسم اليميني (الفورم) */}
+      {/* 🌟 Zidna el name wal autoComplete attributes la-yeishto el inputs */}
       <form className="contact-form" onSubmit={handleSubmit}>
         <h3>Send us your feedback</h3>
         
-        {/* 🌟 3. Rabtna el value wal onChange b-kel input box */}
         <input 
           type="text" 
+          name="name"
+          autoComplete="name"
           placeholder="Full Name" 
           value={name} 
           onChange={(e) => setName(e.target.value)} 
@@ -57,6 +65,8 @@ function Contact() {
         
         <input 
           type="email" 
+          name="email"
+          autoComplete="email"
           placeholder="Email Address" 
           value={email} 
           onChange={(e) => setEmail(e.target.value)} 
@@ -64,6 +74,7 @@ function Contact() {
         />
         
         <textarea 
+          name="message"
           placeholder="How can we improve?" 
           rows="4" 
           value={message} 

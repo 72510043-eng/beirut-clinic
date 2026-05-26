@@ -512,177 +512,445 @@ input:checked + .slider:before { transform: translateX(18px); }
   }
 }
 
-.contact-page {
-  padding: 0; 
-  background-color: #f4f7f9;
-  min-height: auto; /* بدل 100vh عشان ما تمد الصفحة */
-  padding-bottom: 20px;
+/* ==========================================================================
+   🌟 El-CSS Taba3ik - Modernized with Colors & Animations
+   ========================================================================== */
+
+/* ⏳ 1. Animation Definition for Entrance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+/* 🎆 2. Main Page Layout with Beautiful Gradient */
+/* ==========================================================================
+   🚀 CONTACT PAGE - ULTRA PREMIUM & INTERACTIVE VERSION 
+   ========================================================================== */
 
-/* إعدادات الخط العام */
+/* ⏳ 1. Animations (Entrance + Keyframe for Social Icons) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes iconBounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-4px) scale(1.15); }
+}
+
+/* 🎆 2. Main Page Layout with Luxury Soft Background */
+/* ==========================================================================
+   🚀 CONTACT PAGE - THE FINAL PERFECTED VERSION
+   ========================================================================== */
+
+/* ⏳ 1. Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes iconBounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-4px) scale(1.15); }
+}
+
+/* 🎆 2. Main Page Layout */
 .contact-page {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px; /* مسافة أوسع بين الطرفين تعطي فخامة */
-  padding: 60px 10%; /* استخدام الـ % يخلي التصميم متوازن على كل الشاشات */
-  background-color: #f4f7f9;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* خط عصري وواضح */
+  gap: 80px;
+  padding: 80px 10%;
+  background: radial-gradient(circle at top left, #f8fafc 0%, #edf4fe 100%);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  min-height: auto;
+  padding-bottom: 60px;
+  box-sizing: border-box;
 }
 
-/* تنسيق العناوين */
+/* 📦 3. Panel Setup & Animation Entrance */
+.contact-info {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.contact-form {
+  background: #ffffff;
+  padding: 45px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.04);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
+  box-sizing: border-box;
+}
+
+/* 📝 Typography & Black Titles */
 .contact-info h1 {
-  font-size: 2.8rem;
-  color: #2d3436;
-  margin-bottom: 20px;
-  letter-spacing: -1px;
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 25px;
+  letter-spacing: -1.5px;
+  font-weight: 800;
 }
 
-.contact-info p {
-  font-size: 1.1rem;
-  color: #636e72;
-  line-height: 1.8; /* تباعد الأسطر لراحة العين */
-}
-
-/* تنسيق الفورم (النموذج) */
 .contact-form h3 {
-  font-size: 1.5rem;
-  color: #2d3436;
-  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #000000;
+  margin-bottom: 25px;
+  font-weight: 700;
 }
 
+/* 🔷 4. Details Box */
+.contact-details-box {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 2.5px solid transparent;
+  border-image: linear-gradient(135deg, #007bff 0%, #00d2ff 100%) 1;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 15px 30px rgba(0, 123, 255, 0.06);
+  position: relative;
+}
+
+.contact-details-box p {
+  font-size: 1.15rem;
+  color: #000000 !important;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-details-box p:hover {
+  transform: translateX(8px);
+  color: #007bff !important;
+}
+
+.contact-details-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* 📋 5. Inputs with Left Alignment & Black Text */
+/* ==========================================================================
+   💎 THE ULTRA LUXURY & STRONG EDITION - CONTACT PAGE
+   ========================================================================== */
+
+/* ⏳ Ultra-Premium Dynamic Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fluidMesh {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes iconBounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-6px) scale(1.25); }
+}
+
+/* 🎇 1. Page Frame Layout - Fluid Luxury Background */
+.contact-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding: 90px 10%;
+  /* 🌈 خلفية متموجة ألوانها بتتحرك ببطء وفخامة */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: fluidMesh 15s ease infinite;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  min-height: auto;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+
+/* 📦 2. Glassmorphism Panels (تأثير زجاجي فخم وواضح لمنع التدحيش) */
+.contact-info {
+  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.contact-form {
+  /* 🍾 تأثير زجاجي مع حماية بيضاء مريحة للكتابة */
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 50px;
+  border-radius: 28px; /* كرت مدور ونضيف متل الـ Booking */
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.15); /* ظل ناعم وعميق جداً */
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+/* 📝 Heavy Luxury Typography - خطوط سوداء فاحمة وعريضة */
+.contact-info h1 {
+  font-size: 3.5rem;
+  color: #ffffff; /* أبيض صريح ليبرز فوق الخلفية المتحركة */
+  margin-bottom: 30px;
+  letter-spacing: -2px;
+  font-weight: 900;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-form h3 {
+  font-size: 1.8rem;
+  color: #000000;
+  margin-bottom: 30px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+/* 🔷 3. Premium Glass Details Box (Strong Left Blue Accent) */
+.contact-details-box {
+  background: rgba(255, 255, 255, 0.95);
+  border-left: 8px solid #2563eb; /* عامود أزرق عريض وقوي بيعطي هيبة للكارد */
+  border-radius: 18px;
+  padding: 35px;
+  margin-bottom: 35px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* تضخيم الخط وتسويده داخل الـ Box لراحة العين */
+.contact-details-box p {
+  font-size: 1.25rem;
+  color: #000000 !important; /* أسود صريح */
+  font-weight: 700; /* خط عريض وقوي جداً */
+  line-height: 1.8;
+  margin-bottom: 22px;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.contact-details-box p:hover {
+  transform: translateX(10px);
+  color: #2563eb !important; /* بيقلب أزرق كلينيك */
+}
+
+.contact-details-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* 📋 4. High-Contrast Input Boxes (Left-Aligned & Super Bold) */
 .contact-form input, 
 .contact-form textarea {
   width: 100%;
-  padding: 15px; /* زيادة البادينج تعطي مساحة أكبر للكتابة */
-  margin-bottom: 20px;
-  border: 1px solid #dfe6e9;
-  border-radius: 12px; /* حواف دائرية أنعم */
-  font-size: 1rem;
-  transition: border 0.3s;
+  padding: 20px;
+  margin-bottom: 26px; /* تفكيك التدحيش */
+  border: 2px solid #cbd5e1;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 700; /* خط الكتيب جواتهم عريض وأسود */
+  background-color: #f8fafc;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+  color: #000000 !important; /* أسود فاحم صريح */
+  text-align: left; /* دايما من اليسار */
 }
 
-.contact-form input:focus {
-  border-color: #007bff;
-  outline: none; /* إطار أزرق عند التحديد (احترافية) */
+/* تأثير متوهج فخم عند الضغط والكتابة */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2563eb;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 5px rgba(37, 99, 235, 0.25); /* هالة زرقاء عريضة وقوية */
+  outline: none;
 }
 
+/* ⚡ 5. Submit Button - Power Premium Electric Blue */
 .submit-btn {
-  background: #007bff;
-  color: white;
-  padding: 15px 30px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff !important;
+  padding: 18px 45px;
   border: none;
-  border-radius: 12px;
-  font-size: 1rem;
-  font-weight: 600;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 800; /* خط عريض جداً للزر */
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: auto;
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .submit-btn:hover {
-  background: #0056b3;
-}/* تنسيق النصوص باللون الأسود */
-.contact-info h1, 
-.contact-info p, 
-.contact-form h3 {
-  color: #000000; /* اللون الأسود الصريح */
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.5); /* توهج كهربائي عالي الجودة */
 }
 
-/* تنسيق روابط التواصل */
+/* 🌐 6. Social Capsules (Rounded Transparent Glass Style) */
+.social-label {
+  margin-top: 40px;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #ffffff !important; /* لون أبيض ملوكي */
+}
+
 .social-links {
   display: flex;
-  gap: 20px;
-  margin-top: 30px;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .social-item {
-  color: #000000; /* اللون الأسود */
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 800;
   display: flex;
   align-items: center;
-  gap: 8px; /* مسافة بين الإيموجي والكلمة */
-  transition: opacity 0.3s;
+  gap: 12px;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+}
+
+.fb-btn {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #1877f2 !important;
+  border: 2px solid #1877f2;
+}
+.fb-btn:hover {
+  background-color: #1877f2;
+  color: #ffffff !important;
+}
+
+.ig-btn {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #d62976 !important;
+  border: 2px solid #d62976;
+}
+.ig-btn:hover {
+  background-color: #d62976;
+  color: #ffffff !important;
+}
+
+.tw-btn {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #1da1f2 !important;
+  border: 2px solid #1da1f2;
+}
+.tw-btn:hover {
+  background-color: #1da1f2;
+  color: #ffffff !important;
+}
+
+.li-btn {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #0077b5 !important;
+  border: 2px solid #0077b5;
+}
+.li-btn:hover {
+  background-color: #0077b5;
+  color: #ffffff !important;
 }
 
 .social-item:hover {
-  opacity: 0.7; /* تأثير خفيف عند تمرير الماوس */
+  transform: translateY(-6px) scale(1.06);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* لتنسيق الأيقونات (الإيموجي) بحجم مناسب */
+.social-item:hover span {
+  animation: iconBounce 0.5s ease infinite alternate;
+}
+
 .social-item span {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  display: inline-block;
+  transition: transform 0.2s;
 }
 
+/* 🎫 7. Booking Button Styles */
+.book-btn {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white !important;
+  border: none;
+  padding: 16px 35px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.2);
+}
 
-/* --- التجاوب مع الموبايل --- */
-@media (max-width: 768px) {
-  /* 1. Force the page to stay inside the screen boundaries with 20px padding on the sides */
+.book-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+/* --- 📱 8. Responsive Setup (Anti-Tda7shash 100% matched with Booking) --- */
+@media (max-width: 968px) {
   .contact-page {
     grid-template-columns: 1fr !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    box-sizing: border-box !important;
+    padding: 40px 24px !important;
+    gap: 40px;
   }
 
-  /* 2. Force the form to stay inside the page */
+  .contact-info,
   .contact-form {
-    width: 100% !important;
-    max-width: 100% !important;
+    padding: 40px 24px !important;
+    border-radius: 28px !important; /* تدويرة كرت الـ Booking بالظبط */
+    margin-bottom: 30px; /* مسافة أمان بتمنع اللزق بالفوتر */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
     box-sizing: border-box !important;
   }
 
-  /* 3. Force the inputs to NEVER exceed the form width */
   .contact-form input, 
   .contact-form textarea {
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important; /* This includes the 15px padding inside the 100% width */
+    padding: 18px !important;
+    margin-bottom: 22px !important; /* تفكيك العلب لراحة الإبهام */
+    border-radius: 14px !important;
+  }
+  
+  .submit-btn {
+    width: 100% !important; /* بيقفل الشاشة ع الموبايل للفخامة وسهولة الكبس */
+    border-radius: 14px !important;
+    padding: 18px !important;
   }
 }
 
-
-
-
-
-/* تنسيق الـ Container الجديد */
-.consultation-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: white;
-  padding: 30px 50px;
-  margin-top: 50px;
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  border: 1px solid #e2e8f0;
-}
-
-.consultation-text h3 { margin: 0; color: #1e293b; }
-.consultation-text p { margin: 5px 0 0; color: #64748b; }
-
-.book-btn {
-  background-color: #2563eb;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  border-radius: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.book-btn:hover { background-color: #1d4ed8; }
-
-/* للتجاوب مع الموبايل */
 @media (max-width: 768px) {
   .consultation-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 25px !important;
   }
-}/* هذا التنسيق ضعه في ملف App.css العام */
-
+}
 .doctors-page {
   padding: 40px;
   background-color: #f9fbff;

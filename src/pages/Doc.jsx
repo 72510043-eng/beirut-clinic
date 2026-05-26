@@ -31,7 +31,7 @@ function Doc() {
         {/* الطبيب الثاني */}
         <div className="doctor-card">
           <div className="image-container">
-            <img src={doc2} alt="Dr. Lina Haddad" className="doctor-img" />
+            <img src={doc3} alt="Dr. Lina Haddad" className="doctor-img" />
           </div>
           <h3>Dr. Lina Haddad</h3>
           <p className="specialty">Dentistry</p>
@@ -42,7 +42,7 @@ function Doc() {
         {/* الطبيب الثالث */}
         <div className="doctor-card">
           <div className="image-container">
-            <img src={doc3} alt="Dr. Omar Nasser" className="doctor-img" />
+            <img src={doc2} alt="Dr. Omar Nasser" className="doctor-img" />
           </div>
           <h3>Dr. Omar Nasser</h3>
           <p className="specialty">Cardiology</p>

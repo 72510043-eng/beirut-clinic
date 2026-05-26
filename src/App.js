@@ -14,18 +14,40 @@ function App() {
 
       {/* Header */}
       <header className="custom-top-header">
-        <div className="custom-brand">BeirutClinic</div>
+        {/* 🌟 Zedna emoji l-epshtara 🏥 7add BeirutClinic */}
+        <div className="custom-brand">🏥 BeirutClinic</div>
+        
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
           <span></span>
           <span></span>
           <span></span>
         </div>
+        
         <nav className={`custom-nav ${menuOpen ? 'active' : ''}`}>
-          <button className={`custom-nav-link ${page === 'home' ? 'active' : ''}`} onClick={() => { setPage('home'); setMenuOpen(false); }}>Home</button>
-          <button className={`custom-nav-link ${page === 'about' ? 'active' : ''}`} onClick={() => { setPage('about'); setMenuOpen(false); }}>About</button>
-          <button className={`custom-nav-link ${page === 'doc' ? 'active' : ''}`} onClick={() => { setPage('doc'); setMenuOpen(false); }}>Doctors</button>
-          <button className={`custom-nav-link custom-nav-booking ${page === 'booking' ? 'active' : ''}`} onClick={() => { setPage('booking'); setMenuOpen(false); }}>Book Appointment</button>
-          <button className={`custom-nav-link ${page === 'contact' ? 'active' : ''}`} onClick={() => { setPage('contact'); setMenuOpen(false); }}>Contact</button>
+          {/* 🌟 Zedna 🏠 lal-Home */}
+          <button className={`custom-nav-link ${page === 'home' ? 'active' : ''}`} onClick={() => { setPage('home'); setMenuOpen(false); }}>
+            🏠 Home
+          </button>
+          
+          {/* 🌟 Zedna ℹ️ lal-About */}
+          <button className={`custom-nav-link ${page === 'about' ? 'active' : ''}`} onClick={() => { setPage('about'); setMenuOpen(false); }}>
+            ℹ️ About
+          </button>
+          
+          {/* 🌟 Zedna 🩺 lal-Doctors */}
+          <button className={`custom-nav-link ${page === 'doc' ? 'active' : ''}`} onClick={() => { setPage('doc'); setMenuOpen(false); }}>
+            🩺 Doctors
+          </button>
+          
+          {/* 🌟 Zedna 📅 lal-Book Appointment */}
+          <button className={`custom-nav-link custom-nav-booking ${page === 'booking' ? 'active' : ''}`} onClick={() => { setPage('booking'); setMenuOpen(false); }}>
+            📅 Book Appointment
+          </button>
+          
+          {/* 🌟 Zedna 📞 lal-Contact */}
+          <button className={`custom-nav-link ${page === 'contact' ? 'active' : ''}`} onClick={() => { setPage('contact'); setMenuOpen(false); }}>
+            📞 Contact
+          </button>
         </nav>
       </header>
 
