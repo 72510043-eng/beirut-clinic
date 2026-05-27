@@ -4,6 +4,7 @@ import About from './pages/About';
 import Booking from './pages/Booking';
 import Contact from './pages/Contact';
 import Doc from './pages/Doc';
+import Emergency from './pages/Emergency';
 
 function App() {
   const [page, setPage] = useState('home');
@@ -48,6 +49,11 @@ function App() {
           <button className={`custom-nav-link ${page === 'contact' ? 'active' : ''}`} onClick={() => { setPage('contact'); setMenuOpen(false); }}>
             📞 Contact
           </button>
+          
+          {/* 🌟 Zedna 🚨 lal-Emergency */}
+          <button className={`custom-nav-link ${page === 'emergency' ? 'active' : ''}`} onClick={() => { setPage('emergency'); setMenuOpen(false); }}>
+            🚨 Emergency
+          </button>
         </nav>
       </header>
 
@@ -59,6 +65,7 @@ function App() {
           {page === 'doc' && <Doc onNavigate={setPage} />}
           {page === 'booking' && <Booking onNavigate={setPage} />}
           {page === 'contact' && <Contact onNavigate={setPage} />}
+          {page === 'emergency' && <Emergency onNavigate={setPage} />}
         </main>
       </div>
 

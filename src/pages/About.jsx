@@ -20,7 +20,7 @@ function About({ onNavigate }) {
         </div>
         <div className="about-text-side">
           <p>
-            Founded in 2020, CareClinic was built on the principle that exceptional healthcare 
+            Founded in 2020, BeirutClinic was built on the principle that exceptional healthcare 
             should be accessible, stress-free, and tailored to every individual. We don't just treat 
             symptoms; we focus on overall wellness and preventative care.
           </p>
