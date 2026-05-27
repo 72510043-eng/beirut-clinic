@@ -4,14 +4,14 @@ export default function EmergencyPage() {
       city: 'Beirut',
       subtitle: 'Beirut · Main Hub',
       number: '140',
-      color: 'bg-red-500',
+      color: 'btn-red', 
       pin: '📍',
     },
     {
       city: 'Tyre',
       subtitle: 'Tyre · near to tyrebeach',
       number: '+961 81945734',
-      color: 'bg-blue-500',
+      color: 'btn-blue',
       pin: '📍',
       active: true,
     },
@@ -19,77 +19,66 @@ export default function EmergencyPage() {
       city: 'Saida',
       subtitle: 'saida · near to saidafort',
       number: '112',
-      color: 'bg-red-500',
+      color: 'btn-red',
       pin: '🏥',
     },
   ];
 
   return (
-    <div className="min-h-screen bg-[#f7f7f7] font-sans overflow-hidden">
-      {/* Header */}
-      <div className="flex flex-col items-center pt-6 px-4">
-        <div className="w-full max-w-xl relative">
+    <div className="emergency-page">
+      {/* Header Section */}
+      <div className="header-container">
+        <div className="search-wrapper">
           <input
             type="text"
             placeholder="Search by area..."
-            className="w-full rounded-full border border-gray-200 bg-white px-5 py-3 shadow-sm outline-none"
+            className="search-input"
           />
-          <span className="absolute right-5 top-3.5 text-gray-400">🔍</span>
+          <span className="search-icon">🔍</span>
         </div>
 
-        <div className="flex gap-2 mt-4 flex-wrap justify-center">
+        <div className="tags-container">
           {['#Ambulance', '#Police', '#Hospitals', '#Bro mors'].map((tag) => (
-            <span
-              key={tag}
-              className="px-3 py-1 rounded-full bg-white shadow text-sm text-gray-600"
-            >
+            <span key={tag} className="tag-item">
               {tag}
             </span>
           ))}
         </div>
 
-        <h1 className="text-5xl font-light text-gray-800 mt-8">
-          Emergency numbers
-        </h1>
-        <p className="text-gray-500 mt-2">Fast Help, Direct Call</p>
+        <h1 className="main-title">Emergency numbers</h1>
+        <p className="subtitle">Fast Help, Direct Call</p>
       </div>
 
-      {/* Map Section */}
-      <div className="relative mt-10 h-[420px] bg-[#cfe8f4] overflow-hidden">
-        {/* Background Map */}
+      {/* Map & Content Section */}
+      <div className="map-section">
+        {/* Background Map Image */}
         <img
           src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop"
           alt="map"
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          className="map-img"
         />
 
         {/* Map Pins */}
-        <div className="absolute top-10 left-[43%] text-5xl">📍</div>
-        <div className="absolute bottom-14 left-[36%] text-4xl">📍</div>
-        <div className="absolute top-24 right-[30%] text-4xl">📍</div>
+        <div className="map-pin pin-1">📍</div>
+        <div className="map-pin pin-2">📍</div>
+        <div className="map-pin pin-3">📍</div>
 
-        {/* Cards */}
-        <div className="absolute top-16 left-1/2 -translate-x-1/2 flex gap-5 flex-wrap justify-center px-6 w-full">
+        {/* Cards Row (نازلة لتحت عند الخط الأحمر بالـ CSS) */}
+        <div className="cards-row">
           {cards.map((card, index) => (
             <div
               key={index}
-              className={`w-[250px] rounded-3xl bg-white/90 backdrop-blur-md shadow-2xl overflow-hidden border border-white ${
-                card.active ? 'scale-105' : ''
-              }`}
+              className={`card-item ${card.active ? 'active' : ''}`}
             >
-              <div className="p-5">
-                <div className="flex items-start gap-3">
-                  <div className="text-xl">{card.pin}</div>
+              <div className="card-body">
+                <div className="card-header-flex">
+                  <div className="card-pin-icon">{card.pin}</div>
 
                   <div>
-                    <h2 className="text-lg font-semibold text-gray-800">
-                      {card.city}
-                    </h2>
-                    <p className="text-sm text-gray-500 mt-1">
-                      {card.subtitle}
-                    </p>
+                    <h2 className="card-city-title">{card.city}</h2>
+                    <p className="card-sub-info">{card.subtitle}</p>
 
-                    <div className="flex gap-2 mt-3 text-sm text-gray-500">
+                    <div className="card-icons-row">
                       <span>🚓</span>
                       <span>🚑</span>
                       <span>🏥</span>
@@ -99,9 +88,8 @@ export default function EmergencyPage() {
                 </div>
               </div>
 
-              <div
-                className={`${card.color} text-white py-3 text-center font-medium text-lg flex items-center justify-center gap-2`}
-              >
+              {/* زر الاتصال النظيف (كلاس موحد + اللون الديناميكي) */}
+              <div className={`card-btn ${card.color}`}>
                 <span>📞</span>
                 {card.number}
               </div>
@@ -109,41 +97,34 @@ export default function EmergencyPage() {
           ))}
         </div>
 
-        {/* Tips Box */}
+        {/* Tips Box (مكانه فوق على اليمين بالـ Desktop) */}
         <div className="tips-box">
-          <h3 className="font-bold text-gray-800 text-lg mb-4">
-            Tips for Callers
-          </h3>
+          <h3 className="tips-title">Tips for Callers</h3>
 
-          <div className="space-y-4 text-sm text-gray-600">
+          <div className="tips-content">
             <div>
-              <h4 className="font-semibold text-gray-800">Speak Clearly</h4>
-              <p>Speak clearly is your small.</p>
+              <h4 className="tip-heading">Speak Clearly</h4>
+              <p className="tip-text">Speak clearly is your small.</p>
             </div>
 
             <div>
-              <h4 className="font-semibold text-gray-800">
-                Provide Address First
-              </h4>
-              <p>Coree address on the eas.</p>
+              <h4 className="tip-heading">Provide Address First</h4>
+              <p className="tip-text">Coree address on the eas.</p>
             </div>
 
             <div>
-              <h4 className="font-semibold text-gray-800">Provide Contact</h4>
-              <p>Give atniam your emeniss.</p>
+              <h4 className="tip-heading">Provide Contact</h4>
+              <p className="tip-text">Give atniam your emeniss.</p>
             </div>
           </div>
         </div>
 
         {/* Floating SOS Button */}
-        <button className="absolute bottom-6 right-6 w-20 h-20 rounded-3xl bg-red-500 shadow-2xl text-white flex flex-col items-center justify-center hover:scale-105 transition">
-          <span className="text-xl">📞</span>
-          <span className="font-bold">SOS</span>
+        <button className="sos-button">
+          <span>📞</span>
+          <span style={{ fontWeight: 'bold' }}>SOS</span>
         </button>
       </div>
-
-      {/* Footer Section */}
-     
     </div>
   );
 }

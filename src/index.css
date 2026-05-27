@@ -373,16 +373,19 @@ input:checked + .slider:before { transform: translateX(18px); }
 .custom-nav-link:hover, .custom-nav-link.active {
     color: #1e40af;
     background-color: #eff6ff;
+    box-shadow: none !important;
 }
 
 /* --- تنسيق زر الـ Booking الثابت --- */
 .custom-nav-booking {
     background-color: #1e40af !important;
     color: white !important;
+   
 }
 
 .custom-nav-booking:hover {
     background-color: #1d4ed8 !important;
+    box-shadow: none !important;
 }
 
 /* حل مشكلة الزر عند الضغط (Active state) */
@@ -1281,8 +1284,7 @@ h3 {
     border-color: #3b82f6;
 }
 
-/* Button Pulse Effect */
-.btn {
+/* Button Pulse Effect */.btn {
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
@@ -1293,955 +1295,231 @@ h3 {
     filter: brightness(1.2);
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
     transform: scale(1.05);
-  
 }  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-
-
-/* ===== GLOBAL ===== */
-
-*{
-
-  margin:0;
-
-  padding:0;
-
-  box-sizing:border-box;
-
-}
-
-
-
-body{
-
-  font-family:'Poppins', sans-serif;
-
-  background:#f4f7fb;
-
-  overflow-x:hidden;
-
-}
-
-
-
-/* ===== MAIN PAGE ===== */
-
-.min-h-screen{
-
-  min-height:100vh;
-
-}
-
-
-
-.font-sans{
-
-  font-family:'Poppins', sans-serif;
-
-}
-
-
-
-.overflow-hidden{
-
-  overflow:hidden;
-
-}
-
-
-
-/* ===== FLEX ===== */
-
-.flex{
-
-  display:flex;
-
-}
-
-
-
-.flex-col{
-
-  flex-direction:column;
-
-}
-
-
-
-.items-center{
-
-  align-items:center;
-
-}
-
-
-
-.items-start{
-
-  align-items:flex-start;
-
-}
-
-
-
-.justify-center{
-
-  justify-content:center;
-
-}
-
-
-
-.flex-wrap{
-
-  flex-wrap:wrap;
-
-}
-
-
-
-.gap-2{
-
-  gap:8px;
-
-}
-
-
-
-.gap-3{
-
-  gap:12px;
-
-}
-
-
-
-.gap-5{
-
-  gap:20px;
-
-}
-
-
-
-/* ===== SPACING ===== */
-
-.pt-6{
-
-  padding-top:30px;
-
-}
-
-
-
-.px-4{
-
-  padding-left:16px;
-
-  padding-right:16px;
-
-}
-
-
-
-.px-5{
-
-  padding-left:20px;
-
-  padding-right:20px;
-
-}
-
-
-
-.px-6{
-
-  padding-left:24px;
-
-  padding-right:24px;
-
-}
-
-
-
-.py-1{
-
-  padding:5px 12px;
-
-}
-
-
-
-.py-3{
-
-  padding-top:14px;
-
-  padding-bottom:14px;
-
-}
-
-
-
-.p-5{
-
-  padding:22px;
-
-}
-
-
-
-.mt-2{
-
-  margin-top:8px;
-
-}
-
-
-
-.mt-3{
-
-  margin-top:12px;
-
-}
-
-
-
-.mt-4{
-
-  margin-top:18px;
-
-}
-
-
-
-.mt-8{
-
-  margin-top:32px;
-
-}
-
-
-
-.mt-10{
-
-  margin-top:50px;
-
-}
-
-
-
-.mb-4{
-
-  margin-bottom:18px;
-
-}
-
-
-
-/* ===== WIDTH ===== */
-
-.w-full{
-
-  width:100%;
-
-}
-
-
-
-.max-w-xl{
-
-  max-width:650px;
-
-}
-
-
-
-.w-\[250px\]{
-
-  width:260px;
-
-}
-
-
-
-.w-\[220px\]{
-
-  width:230px;
-
-}
-
-
-
-.w-20{
-
-  width:82px;
-
-}
-
-
-
-.h-20{
-
-  height:82px;
-
-}
-
-
-
-.h-\[420px\]{
-
-  height:520px;
-
-}
-
-
-
-/* ===== POSITION ===== */
-
-.relative{
-
-  position:relative;
-
-}
-
-
-
-.absolute{
-
-  position:absolute;
-
-}
-
-
-
-.inset-0{
-
-  top:0;
-
-  left:0;
-
-  right:0;
-
-  bottom:0;
-
-}
-
-
-
-.left-1\/2{
-
-  left:50%;
-
-}
-
-
-
-.-translate-x-1\/2{
-
-  transform:translateX(-50%);
-
-}
-
-
-
-.top-3\.5{
-
-  top:14px;
-
-}
-
-
-
-.top-8{
-
-  top:30px;
-
-}
-
-
-
-.top-10{
-
-  top:40px;
-
-}
-
-
-
-.top-16{
-
-  top:80px;
-
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-.top-24{
-
-  top:100px;
-
-}
-
-
-
-.bottom-6{
-
-  bottom:25px;
-
-}
-
-
-
-.bottom-14{
-
-  bottom:60px;
-
-}
-
-
-
-.right-5{
-
-  right:20px;
-
-}
-
-
-
-.right-6{
-
-  right:24px;
-
-}
-
-
-
-.left-\[43\%\]{
-
-  left:43%;
-
-}
-
-
-
-.left-\[36\%\]{
-
-  left:36%;
-
-}
-
-
-
-.right-\[30\%\]{
-
-  right:30%;
-
-}
-
-
-
-/* ===== INPUT ===== */
-
-input{
-
-  border:none;
-
-}
-
-
-
-.outline-none{
-
-  outline:none;
-
-}
-
-
-
-.rounded-full{
-
-  border-radius:999px;
-
-}
-
-
-
-.rounded-2xl{
-
-  border-radius:22px;
-
-}
-
-
-
-.rounded-3xl{
-
-  border-radius:28px;
-
-}
-
-
-
-.border{
-
-  border:1px solid #e5e7eb;
-
-}
-
-
-
-.border-white{
-
-  border-color:white;
-
-}
-
-
-
-.border-gray-200{
-
-  border-color:#e5e7eb;
-
-}
-
-
-
-/* ===== COLORS ===== */
-
-.bg-white{
-
-  background:white;
-
-}
-
-
-
-.bg-white\/90{
-
-  background:rgba(255,255,255,0.88);
-
-}
-
-
-
-.bg-white\/95{
-
-  background:rgba(255,255,255,0.95);
-
-}
-
-
-
-.bg-red-500{
-
-  background:linear-gradient(135deg,#ff4b4b,#ff2d2d);
-
-}
-
-
-
-.bg-blue-500{
-
-  background:linear-gradient(135deg,#4d8dff,#2563eb);
-
-}
-
-
-
-.bg-\[\#f7f7f7\]{
-
-  background:#f4f7fb;
-
-}
-
-
-
-.bg-\[\#cfe8f4\]{
-
-  background:#dceffd;
-
-}
-
-
-
-/* ===== TEXT ===== */
-
-.text-center{
-
-  text-align:center;
-
-}
-
-
-
-.text-sm{
-
-  font-size:14px;
-
-}
-
-
-
-.text-lg{
-
-  font-size:20px;
-
-}
-
-
-
-.text-xl{
-
-  font-size:24px;
-
-}
-
-
-
-.text-5xl{
-
-  font-size:58px;
-
-}
-
-
-
-.font-light{
-
-  font-weight:300;
-
-}
-
-
-
-.font-medium{
-
-  font-weight:500;
-
-}
-
-
-
-.font-semibold{
-
-  font-weight:600;
-
-}
-
-
-
-.font-bold{
-
-  font-weight:700;
-
-}
-
-
-
-.text-white{
-
-  color:white;
-
-}
-
-
-
-.text-gray-400{
-
-  color:#9ca3af;
-
-}
-
-
-
-.text-gray-500{
-
-  color:#6b7280;
-
-}
-
-
-
-.text-gray-600{
-
-  color:#4b5563;
-
-}
-
-
-
-.text-gray-800{
-
-  color:#111827;
-
-}
-
-
-
-/* ===== SHADOWS ===== */
-
-.shadow{
-
-  box-shadow:0 5px 15px rgba(0,0,0,0.08);
-
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7fb;
+  overflow-x: hidden;
 }
-
-
 
-.shadow-sm{
-
-  box-shadow:0 4px 12px rgba(0,0,0,0.06);
-
+/* ===== PAGE WRAPPER ===== */
+.emergency-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
 }
-
-
 
-.shadow-xl{
-
-  box-shadow:0 12px 30px rgba(0,0,0,0.12);
-
+/* ===== HEADER SECTION ===== */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
-
-
 
-.shadow-2xl{
-
-  box-shadow:0 15px 35px rgba(0,0,0,0.15);
-
+.search-wrapper {
+  width: 100%;
+  max-width: 650px;
+  position: relative;
 }
-
-
 
-/* ===== OBJECT ===== */
-
-.object-cover{
-
-  object-fit:cover;
-
+.search-input {
+  width: 100%;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  padding: 14px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  outline: none;
+  transition: 0.3s;
 }
-
 
-
-.opacity-30{
-
-  opacity:0.25;
-
+.search-input:focus {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
-
 
-
-.backdrop-blur-md{
-
-  backdrop-filter:blur(14px);
-
+.search-icon {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  color: #9ca3af;
 }
-
-
 
 /* ===== TAGS ===== */
-
-span{
-
-  transition:0.3s;
-
+.tags-container {
+  display: flex;
+  gap: 8px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-
-
-span:hover{
-
-  transform:translateY(-2px);
-
+.tag-item {
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  font-size: 14px;
+  color: #4b5563;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-
-
-/* ===== SEARCH ===== */
-
-input{
-
-  transition:0.3s;
-
+.tag-item:hover {
+  transform: translateY(-2px);
 }
-
-
-
-input:focus{
-
-  transform:scale(1.02);
-
-  box-shadow:0 10px 25px rgba(0,0,0,0.1);
-
-}
-
-
-
-/* ===== CARDS ===== */
-
-.w-\[250px\]{
-
-  transition:0.4s;
-
-  cursor:pointer;
-
-}
-
-
-
-.w-\[250px\]:hover{
-
-  transform:translateY(-10px) scale(1.03);
-
-  box-shadow:0 25px 45px rgba(0,0,0,0.18);
-
-}
-
-
-
-/* ===== BUTTON ===== */
-
-button{
-
-  border:none;
-
-  cursor:pointer;
-
-  transition:0.3s;
-
-}
-
-
-
-button:hover{
-
-  transform:scale(1.08);
-
-  box-shadow:0 20px 40px rgba(255,0,0,0.35);
-
-}
-
-
-
-/* ===== MAP ===== */
-
-.h-full{
-
-  height:100%;
-
-}
-
-
-
-.map-img{
-
-  animation:zoomMap 15s infinite alternate ease-in-out;
-
-}
-
-
-
-@keyframes zoomMap{
-
-  from{
-
-    transform:scale(1);
-
-  }
-
-  to{
-
-    transform:scale(1.08);
-
-  }
-
-}
-
-
 
 /* ===== TITLES ===== */
-
-h1{
-
-  letter-spacing:-2px;
-
+.main-title {
+  font-size: 58px;
+  font-weight: 300;
+  color: #111827;
+  margin-top: 32px;
+  letter-spacing: -2px;
 }
 
+.subtitle {
+  color: #6b7280;
+  margin-top: 8px;
+}
 
+/* ===== MAP SECTION (THE PARENT) ===== */
+.map-section {
+  position: relative;
+  margin-top: 50px;
+  height: 650px; /* كبرنا الارتفاع هون لـ 650px كرمال تضل الخريطة مكملة تحت الكروت بعد ما نزلناهم */
+  background: #dceffd;
+  overflow: hidden;
+}
+
+.map-img {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+  animation: zoomMap 15s infinite alternate ease-in-out;
+}
+
+@keyframes zoomMap {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+/* Map Pins */
+.map-pin { position: absolute; }
+.pin-1 { top: 40px; left: 43%; font-size: 58px; }
+.pin-2 { bottom: 60px; left: 36%; font-size: 24px; }
+.pin-3 { top: 100px; right: 30%; font-size: 24px; }
+
+/* ===== CARDS ROW (نزلة الكروت للخط الأحمر) ===== */
+.cards-row {
+  position: absolute;
+  top: 280px; /* نزلنا الكروت مية على مية لمستوى الخط الأحمر المكتوب ع الصورة */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+}
+
+.card-item {
+  width: 260px;
+  border-radius: 28px;
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  overflow: hidden;
+  border: 1px solid white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.card-item:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.18);
+}
+
+.card-item.active {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 22px;
+}
+
+.card-header-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.card-pin-icon {
+  font-size: 24px;
+}
+
+.card-city-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.card-sub-info {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+.card-icons-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* ===== SINGLE CUSTOM BUTTON CLASS ===== */
+.card-btn {
+  color: white;
+  padding: 14px 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.card-btn:hover {
+  filter: brightness(1.2);
+  transform: scale(1.05);
+}
+
+/* الألوان الديناميكية للزر */
+.btn-red { background: linear-gradient(135deg,#ff4b4b,#ff2d2d); }
+.btn-blue { background: linear-gradient(135deg,#4d8dff,#2563eb); }
 
 /* ===== TIPS BOX ===== */
-
-.space-y-4 > * + *{
-
-  margin-top:18px;
-
-}
-
-
-
-/* ===== HOVER EFFECTS ===== */
-
-.hover\:scale-105:hover{
-
-  transform:scale(1.05);
-
-}
-
-
-
-.transition{
-
-  transition:0.3s;
-
-}
-
-
-
-/* ===== RESPONSIVE ===== */
-
-@media(max-width:950px){
-
-
-
-  .text-5xl{
-
-    font-size:38px;
-
-  }
-
-
-
-  .w-\[220px\]{
-
-    display:none;
-
-  }
-
-
-
-  .h-\[420px\]{
-
-    height:auto;
-
-    padding-bottom:40px;
-
-  }
-
-
-
-  .top-16{
-
-    position:relative;
-
-    top:20px;
-
-  }
-
-
-
-}
-/* Mobile (Default): Tips Box t-koun mawjoude taht el cards */
 .tips-box {
   width: 100%;
   margin-top: 20px;
@@ -2251,14 +1529,67 @@ h1{
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-/* Desktop: Tips Box t-koun absolute 3al yamiin */
+.tips-title {
+  font-weight: 700;
+  color: #111827;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.tips-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.tip-heading {
+  font-weight: 600;
+  color: #111827;
+}
+
+.tip-text {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+/* ===== FLOATING SOS BUTTON ===== */
+.sos-button {
+  position: absolute;
+  bottom: 25px;
+  right: 24px;
+  width: 82px;
+  height: 82px;
+  border-radius: 28px;
+  background: linear-gradient(135deg,#ff4b4b,#ff2d2d);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sos-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 20px 40px rgba(255,0,0,0.35);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:950px){
+  .main-title { font-size: 38px; }
+  .map-section { height: auto; padding-bottom: 40px; }
+  .cards-row { position: relative; top: 20px; transform: none; left: 0; }
+}
+
 @media (min-width: 950px) {
   .tips-box {
     position: absolute;
     right: 24px;
-    top: 30px;
-    width: 220px;
-    margin-top: 0;
+    top: 30px; /* رجعناها 30px لتضل فوق على اليمين بالـ Desktop */
+    width: 230px;
   }
 }
 

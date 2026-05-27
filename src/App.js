@@ -46,13 +46,14 @@ function App() {
           </button>
           
           {/* 🌟 Zedna 📞 lal-Contact */}
-          <button className={`custom-nav-link ${page === 'contact' ? 'active' : ''}`} onClick={() => { setPage('contact'); setMenuOpen(false); }}>
-            📞 Contact
-          </button>
+         
           
           {/* 🌟 Zedna 🚨 lal-Emergency */}
           <button className={`custom-nav-link ${page === 'emergency' ? 'active' : ''}`} onClick={() => { setPage('emergency'); setMenuOpen(false); }}>
             🚨 Emergency
+          </button>
+           <button className={`custom-nav-link ${page === 'contact' ? 'active' : ''}`} onClick={() => { setPage('contact'); setMenuOpen(false); }}>
+            📞 Contact
           </button>
         </nav>
       </header>
