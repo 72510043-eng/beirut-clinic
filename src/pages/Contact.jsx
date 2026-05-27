@@ -25,7 +25,7 @@ function Contact() {
         <div className="contact-details-box">
           <p>We're here to help you. Reach out to us anytime.</p>
           <p>📍 Branches: Beirut Main, Tripoli City</p>
-          <p>📧 Email: contact@careclinic.com</p>
+          <p>📧 Email: contact@Beirutclinic.com</p>
           <p>📞 Phone: +961 01 234 567</p>
         </div>
         
