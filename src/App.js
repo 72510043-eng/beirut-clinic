@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="custom-app-container">
 
-      {/* Header */}
+     
       <header className="custom-top-header">
         {/* 🌟 Zedna emoji l-epshtara 🏥 7add BeirutClinic */}
         <div className="custom-brand">🏥 BeirutClinic</div>
@@ -25,7 +25,7 @@ function App() {
         </div>
         
         <nav className={`custom-nav ${menuOpen ? 'active' : ''}`}>
-          {/* 🌟 Zedna 🏠 lal-Home */}
+       
           <button className={`custom-nav-link ${page === 'home' ? 'active' : ''}`} onClick={() => { setPage('home'); setMenuOpen(false); }}>
             🏠 Home
           </button>
@@ -35,20 +35,17 @@ function App() {
             ℹ️ About
           </button>
           
-          {/* 🌟 Zedna 🩺 lal-Doctors */}
+         
           <button className={`custom-nav-link ${page === 'doc' ? 'active' : ''}`} onClick={() => { setPage('doc'); setMenuOpen(false); }}>
             🩺 Doctors
           </button>
           
-          {/* 🌟 Zedna 📅 lal-Book Appointment */}
+          
           <button className={`custom-nav-link custom-nav-booking ${page === 'booking' ? 'active' : ''}`} onClick={() => { setPage('booking'); setMenuOpen(false); }}>
             📅 Book Appointment
           </button>
           
-          {/* 🌟 Zedna 📞 lal-Contact */}
-         
-          
-          {/* 🌟 Zedna 🚨 lal-Emergency */}
+  
           <button className={`custom-nav-link ${page === 'emergency' ? 'active' : ''}`} onClick={() => { setPage('emergency'); setMenuOpen(false); }}>
             🚨 Emergency
           </button>
@@ -58,7 +55,7 @@ function App() {
         </nav>
       </header>
 
-      {/* Main Container - Cleaned up to protect Home */}
+  
       <div className="main-content-wrapper" style={{ minHeight: '100vh', boxSizing: 'border-box' }}>
         <main className="custom-page-body">
           {page === 'home' && <Home onNavigate={setPage} />}

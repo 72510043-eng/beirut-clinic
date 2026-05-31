@@ -60,7 +60,7 @@ export default function EmergencyPage() {
 
         {/* Map Pins */}
         <div className="map-pin pin-1">📍</div>
-        <div className="map-pin pin-2">📍</div>
+      
         <div className="map-pin pin-3">📍</div>
 
         {/* Cards Row (نازلة لتحت عند الخط الأحمر بالـ CSS) */}

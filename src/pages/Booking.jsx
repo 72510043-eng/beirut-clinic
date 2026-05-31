@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 
-// 1. Zidna { isDarkMode } bil-props fo2 (mn App.jsx)
-function Booking({ isDarkMode }) {
+function Booking() {
   
   const [bookings, setBookings] = useState(() => {
     const savedBookings = localStorage.getItem('careclinic_bookings');
@@ -22,7 +21,6 @@ function Booking({ isDarkMode }) {
   const [disease, setDisease] = useState('');
   const [doctor, setDoctor] = useState('Dr Ahmed');
   
-  // 2. Shelna "isDarkMode" state hon la2an sarna 3am n-jibha prop
   const [showBookings, setShowBookings] = useState(true); 
   const [sortOrder, setSortOrder] = useState('newest');    
 
@@ -59,10 +57,8 @@ function Booking({ isDarkMode }) {
   });
 
   return (
-    // 3. Bi-ya7od el class auto mn l-prop (App.jsx)
-    <div className={`booking-container ${isDarkMode ? 'dark-mode' : ''}`}>
+    <div className="booking-container">
       
-      {/* Top Banner (Shelna l-toggle wrapper klllo!) */}
       <div className="blue-banner">
         <div>
           <h1>📅 Booking</h1>
@@ -70,18 +66,17 @@ function Booking({ isDarkMode }) {
         </div>
       </div>
 
-      {/* Inputs Form */}
       <form className="inputs-bar" onSubmit={handleSend}>
         <input type="text" placeholder="👤 Name" value={name} onChange={(e) => setName(e.target.value)} />
         <input 
-      type="email" 
-       name="user_email"            /* 🌟 Zid hay kermal el browser ye7faz l-inputs */
-       autoComplete="email"         /* 🌟 Zid hay (Capital C) kermal yfarji l-emails l-2dam */
-      placeholder="📧 Email" 
-     value={email} 
-      onChange={(e) => setEmail(e.target.value)} 
-/>
-        <input type="text" placeholder="🩺 Disease" value={disease} onChange={(e) => setDisease(e.target.value)} />
+          type="email" 
+          name="user_email"
+          autoComplete="email"
+          placeholder="📧 Email" 
+          value={email} 
+          onChange={(e) => setEmail(e.target.value)} 
+        />
+        <input type="text" placeholder="🩺 Disease" value={disease} onChange={(e) => setName(e.target.value)} />
         <select value={doctor} onChange={(e) => setDoctor(e.target.value)}>
           <option value="Dr Ahmed">Dr Ahmed</option>
           <option value="Dr Sarah">Dr Sarah</option>
@@ -89,7 +84,6 @@ function Booking({ isDarkMode }) {
         <button type="submit" className="btn-send">✈️ Send</button>
       </form>
 
-      {/* Filter Buttons */}
       <div className="filters-row">
         <button type="button" className="f-btn btn-blue" onClick={() => setSortOrder('newest')}>
           Newest First
@@ -102,7 +96,6 @@ function Booking({ isDarkMode }) {
         </button>
       </div>
 
-      {/* Bookings List Output */}
       <div className="bookings-list">
         <h3>Your Bookings</h3>
         

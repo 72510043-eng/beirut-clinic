@@ -17,11 +17,11 @@ function Contact() {
 
   return (
     <div className="contact-page">
-      {/* القسم اليساري */}
+
       <div className="contact-info">
         <h1>Let's Connect</h1>
         
-        {/* 🌟 Container jdid jowwato l-sentence wal info kermel l-border wal background */}
+       
         <div className="contact-details-box">
           <p>We're here to help you. Reach out to us anytime.</p>
           <p>📍 Branches: Beirut Main, Tripoli City</p>
@@ -48,8 +48,7 @@ function Contact() {
         </div>
       </div>
 
-      {/* القسم اليميني (الفورم) */}
-      {/* 🌟 Zidna el name wal autoComplete attributes la-yeishto el inputs */}
+     
       <form className="contact-form" onSubmit={handleSubmit}>
         <h3>Send us your feedback</h3>
         

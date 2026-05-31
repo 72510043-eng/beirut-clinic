@@ -16,7 +16,7 @@ function Doc() {
 
       <div className="doctors-grid">
         
-        {/* الطبيب الأول */}
+        
         <div className="doctor-card">
           <div className="image-container">
             <img src={doc1} alt="Dr. Ahmad Khalil" className="doctor-img" />
@@ -28,7 +28,7 @@ function Doc() {
           <div className="schedule-box">🕒 Mon - Fri | 9:00 AM - 5:00 PM</div>
         </div>
 
-        {/* الطبيب الثاني */}
+       
         <div className="doctor-card">
           <div className="image-container">
             <img src={doc3} alt="Dr. Lina Haddad" className="doctor-img" />
@@ -39,7 +39,7 @@ function Doc() {
           <div className="schedule-box">🕒 Tue - Sat | 10:00 AM - 6:00 PM</div>
         </div>
 
-        {/* الطبيب الثالث */}
+     
         <div className="doctor-card">
           <div className="image-container">
             <img src={doc2} alt="Dr. Omar Nasser" className="doctor-img" />
@@ -50,7 +50,7 @@ function Doc() {
           <div className="schedule-box">🕒 Mon - Fri | 8:00 AM - 4:00 PM</div>
         </div>
 
-        {/* الطبيب الرابع */}
+       
         <div className="doctor-card">
           <div className="image-container">
             <img src={doc4} alt="Dr. Sara Younis" className="doctor-img" />
